@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # get 'customers/index'
   # get 'customers/new'
   # get 'customers/create'
@@ -7,6 +8,6 @@ Rails.application.routes.draw do
   # get 'customers/show'
   # get 'customers/destroy'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources customers
+  resources :customers
   root 'customers#index'
 end

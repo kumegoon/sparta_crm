@@ -1,6 +1,17 @@
 ---
 ja:
   activerecord:
+# 下記を追加
+    models:
+        customer: "顧客"
+        attributes:
+        customer:
+        family_name: "姓"
+        given_name: "名"
+        email: "メールアドレス"
+        company_id: "所属会社"
+        post_id: "役職"
+# ここまで追加  
     errors:
       messages:
         record_invalid: "バリデーションに失敗しました: %{errors}"
@@ -205,3 +216,12 @@ ja:
       long: "%Y/%m/%d %H:%M"
       short: "%m/%d %H:%M"
     pm: 午後
+
+    # 以下を追加
+  views:
+    pagination:
+      first: "最初"
+      last: "最後"
+      previous: "前"
+      next: "次"
+      truncate: "..."
